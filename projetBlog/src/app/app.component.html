@@ -1,0 +1,12 @@
+<div class="container" style="border-style:solid; margin-top:2%;">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Mes posts</h1>
+      <ul class="list-group">
+        <app-post-list *ngFor="let post of posts"
+            [title]="post.title"
+            [content]="post.content"></app-post-list>
+      </ul>
+    </div>
+  </div>
+</div>

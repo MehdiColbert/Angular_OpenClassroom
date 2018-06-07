@@ -1,0 +1,19 @@
+  <li [ngClass]="{'list-group-item': true,
+                  'list-group-item-success': loveIts > 0,
+                  'list-group-item-danger': loveIts < 0 }"
+                  style="margin-top:2%; max-width:100%;">
+  <div class="row" >
+    <div>
+      <h2 class="col-sm-9">{{title}}</h2>
+    </div>
+    <div class="col-sm-3">
+      <p style="margin-top:20px; font-size: 16px;"> {{created_at | date: 'y MMMM EEEE d'}} </p>
+    </div>
+  </div>
+  <p>{{content}}</p>
+  <div>
+    <button class="btn btn-success" (click)="addLike()" style="margin:5px;"> I like It ! </button>
+    <button class="btn btn-danger" (click)="dislike()" > I don't like it ! </button>
+    {{loveIts}}
+  </div>
+</li>

@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
     PostListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
     FormsModule
   ],
   providers: [],
